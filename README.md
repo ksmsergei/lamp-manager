@@ -9,8 +9,8 @@ It's very simple. After installing the required modules, just run the **main.py*
 
 The interface is self-explanatory. There is a menu at the top where you can disable minimizing the program to tray (enabled by default), as well as a list of available languages. 
 
-![Interface](https://github.com/user-attachments/assets/95f9b15d-d87f-4aea-80a9-6412a0bccbbc)
-![Options menu](https://github.com/user-attachments/assets/0da67e59-e79f-453f-a022-03d6b97f8da4)
+![Interface](https://github.com/user-attachments/assets/6b0d0ad0-6331-487f-b2dc-ce1ca3036b9b)
+![Options menu](https://github.com/user-attachments/assets/3a731c07-bb4a-44bd-b64e-9603c464bc7a)
 
 In the tray you can find an application icon that will display the current status of the services (enabled or not), and from there you can quickly enable or disable them.
 
