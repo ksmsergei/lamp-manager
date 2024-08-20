@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>277</width>
+    <height>149</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>LAMP Manager</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>:/images/manage_lamp.png</normaloff>:/images/manage_lamp.png</iconset>
+  </property>
+  <property name="layoutDirection">
+   <enum>Qt::LeftToRight</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="lblStatus">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>5</y>
+      <width>267</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string notr="true">&lt;table width=&quot;100%&quot;&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Status of &lt;b&gt;apache2&lt;/b&gt;: &lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;&lt;span style=&quot;color: red;&quot;&gt;inactive&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;Status of &lt;b&gt;mysql&lt;/b&gt;: &lt;/td&gt;
+&lt;td align=&quot;right&quot;&gt;&lt;span style=&quot;color: red;&quot;&gt;inactive&lt;/span&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnStartStop">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>56</y>
+      <width>267</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string notr="true">Start services</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnRestart">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>93</y>
+      <width>267</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string notr="true">Restart services</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>277</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuOptions">
+    <property name="title">
+     <string>Options</string>
+    </property>
+    <widget class="QMenu" name="menuLanguage">
+     <property name="title">
+      <string>Language</string>
+     </property>
+     <addaction name="langEn"/>
+    </widget>
+    <addaction name="aToTray"/>
+    <addaction name="menuLanguage"/>
+   </widget>
+   <addaction name="menuOptions"/>
+  </widget>
+  <action name="aToTray">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Minimize to tray</string>
+   </property>
+   <property name="toolTip">
+    <string>Minimize to tray</string>
+   </property>
+  </action>
+  <action name="langEn">
+   <property name="text">
+    <string notr="true">en</string>
+   </property>
+   <property name="iconText">
+    <string notr="true">en</string>
+   </property>
+   <property name="toolTip">
+    <string notr="true">en</string>
+   </property>
+   <property name="statusTip">
+    <string notr="true"/>
+   </property>
+   <property name="whatsThis">
+    <string notr="true"/>
+   </property>
+   <property name="shortcut">
+    <string notr="true"/>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
